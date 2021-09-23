@@ -458,6 +458,7 @@ body {
 }
 .newsletter .newsletter__input-container {
   margin-top: 16px;
+  position: relative;
 }
 .newsletter .newsletter__input-container .newsletter__input {
   width: 100%;
@@ -475,6 +476,7 @@ body {
 .newsletter .newsletter__button-container {
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 .newsletter .newsletter__button-container .newsletter__button {
   border: none;
@@ -483,6 +485,24 @@ body {
   text-align: center;
   font-size: 14px;
   padding: 8px 16px;
+}
+.newsletter .newsletter__hand {
+  position: absolute;
+}
+.newsletter .newsletter__hand.newsletter__hand-one {
+  transform: rotate(-30deg);
+  left: 23px;
+  bottom: -50%;
+}
+.newsletter .newsletter__hand.newsletter__hand-two {
+  transform: rotate(160deg);
+  right: 8px;
+  top: -40%;
+}
+.newsletter .newsletter__hand.newsletter__hand-three {
+  left: 50%;
+  top: 50%;
+  transform: rotate(10deg) translateX(-40%) translateY(-40%);
 }
 .newsletter .newsletter__socials {
   margin-top: 64px;
