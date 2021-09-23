@@ -224,7 +224,19 @@ body {
     padding-left: 40px;
   }
   .main-nav::before {
+    z-index: -2;
+    background-color: #F9F0EF;
+    opacity: 0.6;
+  }
+  .main-nav .main-nav__nav::before {
+    content: "";
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 50%;
+    z-index: -1;
   }
   .main-nav .main-nav__footer {
     left: calc(50% + 40px);

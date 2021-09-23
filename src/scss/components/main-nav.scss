@@ -72,7 +72,22 @@
     padding-left: $padding-medium;
 
     &::before {
-      left: 50%;
+      z-index: -2;
+      background-color: $main-nav-overlay-color;
+      opacity: 0.6;
+    }
+
+    .main-nav__nav {
+      &::before {
+        content: "";
+        background-color: $white-color;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+      }
     }
 
     .main-nav__footer {
