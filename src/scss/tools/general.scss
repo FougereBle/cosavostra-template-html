@@ -4,3 +4,9 @@
   padding: 0 $padding-small;
   position: relative;
 }
+
+@media screen and (min-width: $breakpoint-sm) {
+  .container {
+    max-width: $container-sm-width;
+  }
+}

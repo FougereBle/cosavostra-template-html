@@ -61,6 +61,11 @@ table {
   position: relative;
 }
 
+@media screen and (min-width: 560px) {
+  .container {
+    max-width: 400px;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   color: #000000;
@@ -112,6 +117,11 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 560px) {
+  .main-header .container {
+    max-width: 100%;
+  }
+}
 .main-nav {
   display: none;
   width: 100%;
@@ -283,6 +293,14 @@ body {
   color: #E3B2AE;
 }
 
+@media screen and (min-width: 560px) {
+  .post .post__row .post__image-container {
+    margin-right: 0;
+  }
+  .post .post__image-container {
+    margin-right: 0;
+  }
+}
 .newsletter {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);

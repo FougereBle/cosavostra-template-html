@@ -67,7 +67,7 @@
     }
 
     .post__image-container {
-      margin-right: calc((50% * 100 / #{$post-col-right-size-unit}) - 50vw)
+      margin-right: calc((50% * 100 / #{$post-col-right-size-unit}) - 50vw);
     }
   }
 
@@ -137,6 +137,20 @@
 
     .post__meta-date {
       color: $primary-color;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .post {
+    .post__row {
+      .post__image-container {
+        margin-right: 0;
+      }
+    }
+
+    .post__image-container {
+      margin-right: 0;
     }
   }
 }

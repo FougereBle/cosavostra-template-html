@@ -1,5 +1,4 @@
 .main-header {
-
   padding: 24px 0 14px 0;
   position: fixed;
   top: 0;
@@ -60,6 +59,14 @@
       &.main-header__burger-icon--close {
         display: none;
       }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .main-header {
+    .container {
+      max-width: 100%;
     }
   }
 }
