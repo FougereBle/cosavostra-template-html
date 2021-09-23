@@ -1,0 +1,31 @@
+.main-header {
+
+  padding: 24px 0 14px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  .main-header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header__logo {
+    height: $main-header-logo-height;
+  }
+
+  .main-header__burger {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+
+    .main-header__burger-icon {
+      width: $main-header-burger-icon-size;
+      height: $main-header-burger-icon-size;
+    }
+  }
+}
