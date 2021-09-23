@@ -6,6 +6,10 @@
   left: 0;
   z-index: 10;
 
+  .main-header__socials {
+    display: none;
+  }
+
   .main-header__row {
     display: flex;
     justify-content: space-between;
@@ -67,6 +71,36 @@
   .main-header {
     .container {
       max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .main-header {
+    .container {
+      max-width: 100%;
+    }
+
+    .main-header__col {
+      &.main-header__col--right {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .main-header__socials {
+      display: flex;
+      align-items: center;
+
+      .main-header__social-link {
+        text-decoration: none;
+      }
+
+      .main-header__social-icon {
+        margin: 0 16px;
+      }
     }
   }
 }

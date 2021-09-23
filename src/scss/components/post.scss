@@ -154,3 +154,33 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .post {
+    &.post--sticky {
+      &:before {
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &.post--video {
+      &:before {
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .post__row {
+      .post__image-container {
+        margin-right: calc(50% * 100 / (50 / 3) - 50vw + #{$padding-small});
+      }
+    }
+
+    .post__image-container {
+      margin-right: calc(50% * 100 / 50 - 50vw + #{$padding-small});
+    }
+  }
+}

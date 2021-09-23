@@ -64,3 +64,23 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .main-nav {
+    width: 50%;
+    margin-left: auto;
+    padding-left: $padding-medium;
+
+    &::before {
+      left: 50%;
+    }
+
+    .main-nav__footer {
+      left: calc(50% + #{$padding-medium});
+
+      .main-nav__footer--left {
+        display: none;
+      }
+    }
+  }
+}
