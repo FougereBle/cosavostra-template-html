@@ -1,0 +1,27 @@
+.main-footer {
+  padding: 40px 0;
+  text-align: center;
+
+  .main-footer__logo-container {
+    position: relative;
+
+    .main-footer__loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      animation: rotate 2s linear infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
