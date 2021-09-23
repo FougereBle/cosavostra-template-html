@@ -80,8 +80,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.main-header .main-header__col.main-header__col--opened .main-header__logo.main-header__logo--yellow {
+  display: none;
+}
+.main-header .main-header__col.main-header__col--opened .main-header__logo.main-header__logo--black {
+  display: block;
+}
 .main-header .main-header__logo {
   height: 41px;
+}
+.main-header .main-header__logo.main-header__logo--black {
+  display: none;
 }
 .main-header .main-header__burger {
   border: none;
@@ -89,9 +98,73 @@ body {
   margin: 0;
   background: none;
 }
+.main-header .main-header__burger.main-header__burger--opened .main-header__burger-icon.main-header__burger-icon--open {
+  display: none;
+}
+.main-header .main-header__burger.main-header__burger--opened .main-header__burger-icon.main-header__burger-icon--close {
+  display: block;
+}
 .main-header .main-header__burger .main-header__burger-icon {
   width: 40px;
   height: 40px;
+}
+.main-header .main-header__burger .main-header__burger-icon.main-header__burger-icon--close {
+  display: none;
+}
+
+.main-nav {
+  display: none;
+  width: 100%;
+  margin-top: 40px;
+}
+.main-nav::before {
+  content: "";
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.main-nav.main-nav--opened {
+  display: block;
+}
+.main-nav .main-nav__nav .main-nav__nav-item {
+  margin-bottom: 24px;
+}
+.main-nav .main-nav__nav .main-nav__nav-item .main-nav__nav-link {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.main-nav .main-nav__footer {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+}
+.main-nav .main-nav__footer .main-nav__footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav .main-nav__footer .main-nav__footer-link {
+  opacity: 0.3;
+  text-decoration: none;
+  color: #000000;
+}
+.main-nav .main-nav__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav .main-nav__socials .main-nav__social-link {
+  text-decoration: none;
+}
+.main-nav .main-nav__socials .main-nav__social-icon {
+  margin: 0 16px;
 }
 
 .post {
