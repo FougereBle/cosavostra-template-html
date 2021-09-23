@@ -61,6 +61,14 @@ table {
   position: relative;
 }
 
+.badge {
+  width: 8px;
+  height: 8px;
+  background-color: #E3B2AE;
+  display: inline-block;
+  border-radius: 100px;
+}
+
 @media screen and (min-width: 560px) {
   .container {
     max-width: 400px;
@@ -306,6 +314,7 @@ body {
 }
 .post.post--default .post__title-container .post__title {
   font-size: 14px;
+  line-height: 20px;
 }
 .post.post--big {
   margin-top: 40px;
@@ -370,9 +379,7 @@ body {
 .post .post__title-container .post__title {
   font-weight: 500;
   font-size: 22px;
-}
-.post .post__meta-container {
-  opacity: 0.4;
+  line-height: 28px;
 }
 .post .post__meta-container .post__meta-row {
   display: flex;
@@ -380,9 +387,11 @@ body {
   align-items: center;
 }
 .post .post__meta-container .post__meta-tag {
+  opacity: 0.4;
   text-decoration: underline;
 }
 .post .post__meta-container .post__meta-date {
+  opacity: 0.4;
   color: #E3B2AE;
 }
 

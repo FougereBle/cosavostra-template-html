@@ -40,6 +40,7 @@
     .post__title-container {
       .post__title {
         font-size: $default-font-size;
+        line-height: 20px;
       }
     }
   }
@@ -119,12 +120,11 @@
     .post__title {
       font-weight: 500;
       font-size: $post-title-font-size;
+      line-height: 28px;
     }
   }
 
   .post__meta-container {
-    opacity: 0.4;
-
     .post__meta-row {
       display: flex;
       justify-content: space-between;
@@ -132,10 +132,12 @@
     }
 
     .post__meta-tag {
+      opacity: 0.4;
       text-decoration: underline;
     }
 
     .post__meta-date {
+      opacity: 0.4;
       color: $primary-color;
     }
   }
