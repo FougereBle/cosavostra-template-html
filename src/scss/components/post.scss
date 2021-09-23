@@ -184,3 +184,23 @@
     }
   }
 }
+
+@media screen and (min-width: $main-header-lg-container-size) {
+  .post {
+    &.post--big {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: $post-big-lg-max-size;
+    }
+
+    .post__row {
+      .post__image-container {
+        margin-right: 0;
+      }
+    }
+
+    .post__image-container {
+      margin-right: 0;
+    }
+  }
+}

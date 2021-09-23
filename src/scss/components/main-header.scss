@@ -82,6 +82,12 @@
     }
 
     .main-header__col {
+      .main-header__logo {
+        height: $main-header-large-logo-height;
+      }
+    }
+
+    .main-header__col {
       &.main-header__col--right {
         width: 50%;
         display: flex;
@@ -101,6 +107,14 @@
       .main-header__social-icon {
         margin: 0 16px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: $main-header-lg-container-size) {
+  .main-header {
+    .container {
+      max-width: $main-header-lg-container-size;
     }
   }
 }

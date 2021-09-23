@@ -74,7 +74,7 @@
 
 @media screen and (min-width: $breakpoint-md) {
   .newsletter {
-    margin-left: calc((50% * 100 / 50) - 100vw);
+    margin-left: calc((-24px * 2) - 50vw);
     margin-right: calc((50% * 100 / 50) - 50vw + #{$padding-small});
   }
 }
